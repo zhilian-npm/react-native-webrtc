@@ -120,7 +120,7 @@ def build(target_dir, platform, debug, bitcode):
     path_parts = [env['PATH'], depot_tools_dir]
     if platform == 'android':
         # Same as . build/android/envsetup.sh
-        android_sdk_root = os.path.join(webrtc_dir, 'third_party/android_tools/sdk')
+        android_sdk_root = os.path.join(webrtc_dir, 'third_party/android_sdk/public')
         path_parts.append(os.path.join(android_sdk_root, 'platform-tools'))
         path_parts.append(os.path.join(android_sdk_root, 'tools'))
         path_parts.append(os.path.join(webrtc_dir, 'build/android'))
